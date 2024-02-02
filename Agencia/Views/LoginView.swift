@@ -9,7 +9,27 @@ import SwiftUI
 
 struct LoginView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            // Header
+            ZStack {
+                RoundedRectangle(cornerRadius: 2)
+                    .foregroundColor(Color.blue)
+                VStack {
+                    Text("Agencia de Missoes")
+                        .font(.system(size: 40))
+                        .foregroundColor(Color.white)
+                        .bold()
+                    Text("Salvando Vidas")
+                        .font(.system(size: 25))
+                        .foregroundColor(Color.white)
+                }
+            }
+            .frame(width: UIScreen.main.bounds.width * 3, height: 300)
+            // login form
+            
+            // create account
+            Spacer()
+        }
     }
 }
 
