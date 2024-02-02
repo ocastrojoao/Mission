@@ -18,6 +18,8 @@
 		A9234B142B6B2DE2007F0DF9 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = A9234B132B6B2DE2007F0DF9 /* FirebaseFirestore */; };
 		A9234B162B6B2DE2007F0DF9 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = A9234B152B6B2DE2007F0DF9 /* FirebaseFirestoreSwift */; };
 		A9234B182B6B32EA007F0DF9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A9234B172B6B32EA007F0DF9 /* GoogleService-Info.plist */; };
+		A94D83CA2B6D50B6004C8BC5 /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A94D83C92B6D50B6004C8BC5 /* RegisterView.swift */; };
+		A94D83CC2B6D510E004C8BC5 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = A94D83CB2B6D510E004C8BC5 /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		A9234B062B6B280F007F0DF9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A9234B092B6B280F007F0DF9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A9234B172B6B32EA007F0DF9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		A94D83C92B6D50B6004C8BC5 /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
+		A94D83CB2B6D510E004C8BC5 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +57,7 @@
 				A90D61992B6C77660072CDC5 /* ProfileView.swift */,
 				A90D619B2B6C77F50072CDC5 /* MissionsView.swift */,
 				A90D619E2B6C78670072CDC5 /* LoginView.swift */,
+				A94D83C92B6D50B6004C8BC5 /* RegisterView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -67,6 +72,7 @@
 		A90D61962B6C75B00072CDC5 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				A94D83CB2B6D510E004C8BC5 /* User.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -199,8 +205,10 @@
 				A9234B052B6B280C007F0DF9 /* ContentView.swift in Sources */,
 				A90D619C2B6C77F50072CDC5 /* MissionsView.swift in Sources */,
 				A90D619A2B6C77660072CDC5 /* ProfileView.swift in Sources */,
+				A94D83CA2B6D50B6004C8BC5 /* RegisterView.swift in Sources */,
 				A90D619F2B6C78670072CDC5 /* LoginView.swift in Sources */,
 				A9234B032B6B280C007F0DF9 /* AgenciaApp.swift in Sources */,
+				A94D83CC2B6D510E004C8BC5 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
