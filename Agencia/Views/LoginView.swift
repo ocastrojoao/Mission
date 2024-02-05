@@ -8,33 +8,48 @@
 import SwiftUI
 
 struct LoginView: View {
+    @State private var email = ""
+    @State private var password = ""
     var body: some View {
         VStack {
             // Header
-            ZStack {
-                RoundedRectangle(cornerRadius: 2)
-                    .foregroundColor(Color.blue)
-                VStack {
-                    Text("Agencia de Missoes")
-                        .font(.system(size: 40))
-                        .foregroundColor(Color.white)
-                        .bold()
-                    Text("Salvando Vidas")
-                        .font(.system(size: 25))
-                        .foregroundColor(Color.white)
+            HeaderView()
+            // login form
+            Form {
+                TextField("Email", text: $email)
+                    .textFieldStyle(RoundedBorderTextFieldStyle())
+                SecureField("Senha", text: $password)
+                    .textFieldStyle(RoundedBorderTextFieldStyle())
+                
+                Button {
+                    
+                } label: {
+                    ZStack{
+                        RoundedRectangle(cornerRadius: 10)
+                            .foregroundColor(Color.orange)
+                        
+                        Text("Entrar")
+                            .foregroundColor(Color.white)
+                            .bold()
+                    }
                 }
             }
-            .frame(width: UIScreen.main.bounds.width * 3, height: 300)
-            // login form
-            
             // create account
+            VStack{
+                Text("Novo por aqui?")
+                Button("Crie sua conta") {
+                    
+                }
+            }
+            .padding(.bottom, 50)
             Spacer()
         }
     }
-}
-
-struct LoginView_Previews: PreviewProvider {
-    static var previews: some View {
-        LoginView()
+    
+    
+    struct LoginView_Previews: PreviewProvider {
+        static var previews: some View {
+            LoginView()
+        }
     }
 }

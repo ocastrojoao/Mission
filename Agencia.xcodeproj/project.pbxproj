@@ -23,6 +23,7 @@
 		A94D83CE2B6D5221004C8BC5 /* MainViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A94D83CD2B6D5221004C8BC5 /* MainViewViewModel.swift */; };
 		A94D83D02B6D5244004C8BC5 /* ProfileViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A94D83CF2B6D5244004C8BC5 /* ProfileViewViewModel.swift */; };
 		A94D83D22B6D5268004C8BC5 /* MissionViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A94D83D12B6D5267004C8BC5 /* MissionViewViewModel.swift */; };
+		A9D3DA8E2B705F4300370E4A /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D3DA8D2B705F4200370E4A /* HeaderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		A94D83CD2B6D5221004C8BC5 /* MainViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewViewModel.swift; sourceTree = "<group>"; };
 		A94D83CF2B6D5244004C8BC5 /* ProfileViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewViewModel.swift; sourceTree = "<group>"; };
 		A94D83D12B6D5267004C8BC5 /* MissionViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissionViewViewModel.swift; sourceTree = "<group>"; };
+		A9D3DA8D2B705F4200370E4A /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 				A90D619B2B6C77F50072CDC5 /* MissionsView.swift */,
 				A90D619E2B6C78670072CDC5 /* LoginView.swift */,
 				A94D83C92B6D50B6004C8BC5 /* RegisterView.swift */,
+				A9D3DA8D2B705F4200370E4A /* HeaderView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -218,6 +221,7 @@
 				A94D83D22B6D5268004C8BC5 /* MissionViewViewModel.swift in Sources */,
 				A90D619F2B6C78670072CDC5 /* LoginView.swift in Sources */,
 				A94D83D02B6D5244004C8BC5 /* ProfileViewViewModel.swift in Sources */,
+				A9D3DA8E2B705F4300370E4A /* HeaderView.swift in Sources */,
 				A9234B032B6B280C007F0DF9 /* AgenciaApp.swift in Sources */,
 				A94D83CE2B6D5221004C8BC5 /* MainViewViewModel.swift in Sources */,
 				A94D83CC2B6D510E004C8BC5 /* User.swift in Sources */,
