@@ -11,38 +11,43 @@ struct LoginView: View {
     @State private var email = ""
     @State private var password = ""
     var body: some View {
-        VStack {
-            // Header
-            HeaderView()
-            // login form
-            Form {
-                TextField("Email", text: $email)
-                    .textFieldStyle(RoundedBorderTextFieldStyle())
-                SecureField("Senha", text: $password)
-                    .textFieldStyle(RoundedBorderTextFieldStyle())
-                
-                Button {
+        NavigationView{
+            VStack {
+                // Header
+                HeaderView(angle: 15, title: "Agência de Missões", subtitle: "Salvando Vidas ", background: .orange)
+                // login form
+                Form {
+                    TextField("Email", text: $email)
+                        .textFieldStyle(RoundedBorderTextFieldStyle())
+                    SecureField("Senha", text: $password)
+                        .textFieldStyle(RoundedBorderTextFieldStyle())
                     
-                } label: {
-                    ZStack{
-                        RoundedRectangle(cornerRadius: 10)
-                            .foregroundColor(Color.orange)
+                    Button {
                         
-                        Text("Entrar")
-                            .foregroundColor(Color.white)
-                            .bold()
+                    } label: {
+                        ZStack{
+                            RoundedRectangle(cornerRadius: 10)
+                                .foregroundColor(Color.orange)
+                            
+                            Text("Entrar")
+                                .foregroundColor(Color.white)
+                                .bold()
+                        }
+                        .padding()
                     }
                 }
-            }
-            // create account
-            VStack{
-                Text("Novo por aqui?")
-                Button("Crie sua conta") {
+                
+                .offset(y: -50)
+                // create account
+                VStack{
+                    Text("Novo por aqui?")
                     
+                    NavigationLink("Crie sua conta",
+                                   destination: RegisterView())
                 }
+                .padding(.bottom, 50)
+                Spacer()
             }
-            .padding(.bottom, 50)
-            Spacer()
         }
     }
     
